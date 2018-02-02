@@ -5,10 +5,14 @@
 $base-font-size:   20px !default;
 $base-font-weight: 300 !default;
 $background-color: #fff !default;
-$brand-color:      red !default;
+$brand-color:      orangered !default;
 $content-width:    auto !default;
 
 @import "minima";
+
+a:hover, .social-media-list a:hover .username {
+  text-decoration-color: $brand-color;
+}
 
 main {
   min-height: 500px;
