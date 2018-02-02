@@ -1,0 +1,34 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$base-font-size:   20px !default;
+$base-font-weight: 300 !default;
+$background-color: #fff !default;
+$brand-color:      red !default;
+$content-width:    auto !default;
+
+@import "minima";
+
+main {
+  min-height: 500px;
+}
+
+blockquote {
+  letter-spacing: 1px;
+}
+
+.footer-heading {
+  display: none;
+}
+
+.highlighter-rouge .highlight, pre, code {
+  background: #fefefe;
+}
+
+.rouge-table {
+  pre, code {
+    border: 0;
+    margin-bottom: 0;
+  }
+}

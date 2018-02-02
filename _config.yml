@@ -1,0 +1,13 @@
+title:
+author: 'Aleksandar Ivanov'
+email: ''
+description: >-
+   ¯\_(ツ)_/¯
+baseurl: ''
+url: 'https://bliof.github.io'
+github_username: bliof
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed

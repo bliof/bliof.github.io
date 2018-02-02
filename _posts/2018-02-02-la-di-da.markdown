@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "La di da"
+date:   2018-02-02 23:30:00 +0200
+categories: new
+---
+
+First time I using jekyll..
+
+```
+Let's see
+```
+
+## Hey
+
+> Джанки
+>
+> lalala
+
+--> foobar
+
+```ruby
+def zozo
+end
+```
+
+### Weird
+
+#### Really
+
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
+* a
+* b
