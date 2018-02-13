@@ -18,12 +18,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-p, blockquote, pre, figure, .highlight {
+p, ul, blockquote, pre, figure, .highlight {
   margin-bottom: 1.5em;
 }
 
 ul p {
   margin-bottom: 15px;
+}
+
+p + ul {
+  margin-top: -1em;
 }
 
 a:hover, .social-media-list a:hover .username {

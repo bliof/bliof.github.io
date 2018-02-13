@@ -37,10 +37,12 @@ END;
 
 ## 📝 notes
 
-The `serial` is just a `integer` column with `NOT NULL` and a function call to get the next value
-from a sequence e.g. `nextval('sales_id_seq')`. The generated sequence is owned by the column in the table.
-If you **alter** the type, the default or whatever of the column the sequence will stay. If you **rename** the column, the owner will change to the new column.
-If you **drop** the column the sequence will be also removed.
+The `serial` is just shortcut to create an `integer` column with `NOT NULL` and a default from a sequence e.g. `nextval('sales_id_seq')`.
+The generated sequence is owned by the column in the table.
+
+* If you **alter** the type, the default or whatever of the column the sequence will stay.
+* If you **rename** the column, the owner will change to the new column.
+* If you **drop** the column the sequence will be also removed.
 
 ```
  \d+ sales_id_seq
