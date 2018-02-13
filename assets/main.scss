@@ -10,6 +10,22 @@ $content-width:    auto !default;
 
 @import "minima";
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+
+  .post-list & {
+    font-weight: 300;
+  }
+}
+
+p, blockquote, pre, figure, .highlight {
+  margin-bottom: 1.5em;
+}
+
+ul p {
+  margin-bottom: 15px;
+}
+
 a:hover, .social-media-list a:hover .username {
   text-decoration-color: $brand-color;
 }
