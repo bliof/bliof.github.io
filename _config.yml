@@ -30,3 +30,5 @@ jekyll-archives:
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jekyll-sitemap
+
