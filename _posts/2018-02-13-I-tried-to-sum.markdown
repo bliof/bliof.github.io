@@ -2,7 +2,8 @@
 layout: post
 title:  "So.. I tried to sum"
 date:   2018-02-13 00:30:00 +0200
-categories: oh-my postgresql
+categories: en
+tags: [oh-my, postgresql]
 ---
 
 So.. I tried to sum some amounts in a postgresql table and create a snapshot of the total.<br/>

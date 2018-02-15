@@ -9,5 +9,24 @@ github_username: bliof
 
 markdown: kramdown
 theme: minima
+
+permalink: pretty
+
+jekyll-archives:
+  enabled: all
+  layouts:
+    year: year
+    month: month
+    day: day
+    tag: sections
+    category: sections
+  permalinks:
+    year: '/en/:year/'
+    month: '/en/:year/:month/'
+    day: '/en/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/:name/'
+
 plugins:
   - jekyll-feed
+  - jekyll-archives

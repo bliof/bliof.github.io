@@ -2,7 +2,8 @@
 layout: post
 title:  "La di da"
 date:   2018-02-02 23:30:00 +0200
-categories: new
+categories: en
+tags: [random]
 ---
 
 First time I using jekyll..

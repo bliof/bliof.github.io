@@ -2,7 +2,8 @@
 layout: post
 title:  "Настройка на електронен подпис от InfoNotary"
 date:   2018-02-03 00:30:00 +0200
-categories: notes
+categories: bg
+tags: [notes]
 ---
 
 ### tl;dr
