@@ -6,6 +6,7 @@ description: >-
 baseurl: ''
 url: 'https://bliof.github.io'
 github_username: bliof
+linkedin_username: bliof
 
 markdown: kramdown
 theme: minima
