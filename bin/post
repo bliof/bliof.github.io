@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+require 'date'
+require 'time'
+
+title = ARGV.join(' ')
+slug = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
+
+file = File.join(__dir__, '..', '_posts', slug + '.markdown')
+
+File.open(file, "w") do |f|
+  f << <<POST
+---
+layout: post
+title: "#{title}"
+date: #{Time.now}
+categories: en
+tags: []
+---
+POST
+end
+
+system("#{ENV['EDITOR']} #{file}")
