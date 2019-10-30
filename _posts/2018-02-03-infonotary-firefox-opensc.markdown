@@ -10,7 +10,7 @@ tags: [notes]
 
 * Записвам `opensc`, може би `pcscd` ако няма
 
-* Драйверите от [wiki-то на InfoNotary](http://wiki.infonotary.com/)
+* Драйверите от [wiki-то на InfoNotary](https://wiki.infonotary.com/)
 
 * В Firefox → `about:preferences#privacy` → `Security Devices` добавям `onepin-opensc-pkcs11.so`
 
@@ -18,9 +18,9 @@ tags: [notes]
 brew -> /usr/local/Cellar/opensc/0.17.0/lib/onepin-opensc-pkcs11.so
 ```
 
-* В Firefox → `about:preferences#privacy` → добавям [InfoNotary CSP Root](http://repository.infonotary.com/files/certificates/INotaryCertChain-MacOS.p7b) → trust за имейли
+* В Firefox → `about:preferences#privacy` → добавям [InfoNotary CSP Root](https://repository.infonotary.com/files/certificates/INotaryCertChain-MacOS.p7b) → trust за имейли
 
 ### Друго:
 
-* [Сертификати на InfoNotary](http://www.infonotary.com/site/?p=doc_g1_3)
+* [Сертификати на InfoNotary](https://www.infonotary.com/site/?p=doc_g1_3)
 * [OpenSC](https://github.com/OpenSC/OpenSC)
