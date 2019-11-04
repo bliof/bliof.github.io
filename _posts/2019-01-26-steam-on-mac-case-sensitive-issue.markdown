@@ -3,7 +3,7 @@ layout: post
 title:  "Steam Client on Mac OS case sensitive issue"
 date:   2019-01-26 12:30:00 +0200
 categories: en
-tags: [oh-my]
+tags: [oh-my, games]
 ---
 For some reason the Steam Client won't work on case sensitive file system on Mac OS..
 
