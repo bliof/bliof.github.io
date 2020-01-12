@@ -26,13 +26,13 @@ There is a file called `regs.cmd` - `"~/.wine/drive_c/GOG Games/Settlers 3 Ultim
 
 Remove all the `/reg:32` from all lines.
 
-To apply it in `"~/.wine/drive_c/GOG Games/Settlers 3 Ultimate/"` just run `wineconsole` and run the script `./regs.cmd`.
+To apply it - in `"~/.wine/drive_c/GOG Games/Settlers 3 Ultimate/"` just run `wineconsole` and run the script `./regs.cmd`.
 
 ### 3. Set up LAN multiplayer
 
 Run `winetricks directplay`
 
-And then use e.g. hamachi make a local network.
+And then use e.g. hamachi to make a local network.
 
 ## Create an application with an icon
 
