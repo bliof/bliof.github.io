@@ -16,18 +16,41 @@ When you install some linux distro on the Hauwei Matebook X Pro 2022 (MRGF-X), y
 To solve them, specify in `/etc/default/grub` this:
 
 ```
-GRUB_CMDLINE_LINUX="i915.enable_psr=0 rhgb quiet mem_sleep_default=deep"
+GRUB_CMDLINE_LINUX="i915.enable_psr=0 rhgb quiet"
 ```
 
 The `i915.enable_psr=0` will fix the flickering.
-
-The `mem_sleep_default=deep` is normal suspend to ram where power is used mainly by the memory and nothing else.
 
 After you modify the `/etc/default/grub`, you have to run
 - on Ubuntu - `sudo update-grub`
 - on Fedora - `grub2-mkconfig -o /etc/grub2-efi.cfg`
 
-To check the `mem_sleep` do:
+## Open issues
+
+### fingerprint reader
+
+The fingerprint reader doesn't work - no driver for now..
+
+### suspend is broken
+
+Both `s2idle` and `deep` suspend seem to be broken..
+
+`s2idle` issues:
+- wastes a lot of power
+- doesn't always work - sometimes it fails to wake up normally:
+    - it looks like a clean start
+    - all apps crash with permission errors
+    - it seems like the laptop is running with some weird user
+
+`deep` issues:
+- there is no way to wake the laptop :D
+
+
+#### changing suspend type
+
+Using `mem_sleep_default=deep` in the `GRUB_CMDLINE_LINUX` will force one of the two suspends
+
+To check the active default do:
 
 ```
 $ cat /sys/power/mem_sleep
@@ -35,10 +58,6 @@ s2idle [deep]
 ```
 
 The value in `[]` is the default one.
-
-## Open issues
-
-The fingerprint reader doesn't work - no driver for now..
 
 ## References:
 
